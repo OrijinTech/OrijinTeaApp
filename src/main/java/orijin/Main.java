@@ -17,14 +17,8 @@ public class Main extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage){
-        Parent root = null;
-        try {
-            // make sure the .fxml file is in the directory with the same name as the package orjin --> orijin
-            root = FXMLLoader.load((Objects.requireNonNull(getClass().getResource("main.fxml"))));
-        } catch (IOException e){
-            throw new RuntimeException(e);
-        }
+    public void start(Stage primaryStage) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("main.fxml")));
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();

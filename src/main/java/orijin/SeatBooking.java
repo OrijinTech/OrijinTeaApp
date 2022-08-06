@@ -3,12 +3,12 @@ package orijin;
 public class SeatBooking {
     private int bookingId;
     private String name;
-    private int tableNumber;
+    private int peopleNum;
 
     public SeatBooking(int bookingId, String name, int tableNumber){
         this.bookingId = bookingId;
         this.name = name;
-        this.tableNumber = tableNumber;
+        this.peopleNum = tableNumber;
     }
 
     public int getBookingId(){
@@ -19,8 +19,8 @@ public class SeatBooking {
         return name;
     }
 
-    public int getTableNumber(){
-        return tableNumber;
+    public int getPeopleNum(){
+        return peopleNum;
     }
 
     public void setBookingId(int bookingId){
@@ -31,8 +31,8 @@ public class SeatBooking {
         this.name = name;
     }
 
-    public void setTableNumber(int tableNumber){
-        this.tableNumber = tableNumber;
+    public void setPeopleNum(int tableNumber){
+        this.peopleNum = tableNumber;
     }
 
 

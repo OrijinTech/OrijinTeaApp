@@ -48,7 +48,7 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orijin.SceneController">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -101,7 +101,7 @@
                 <Color red="0.624" green="0.624" blue="0.624" fx:id="x2" />
               </textFill>
             </Label>
-                  <Button layoutX="42.0" layoutY="387.0" mnemonicParsing="false" text="Reserve Table" />
+                  <Button layoutX="64.0" layoutY="142.0" mnemonicParsing="false" onAction="#switch2Reservation" text="Reserve Table" />
           </children>
         </AnchorPane>
         <ScrollPane prefHeight="-1.0" prefWidth="-1.0">

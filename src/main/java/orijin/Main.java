@@ -25,12 +25,12 @@ public class Main extends Application {
         try {
             // make sure the .fxml file is in the directory with the same name as the package orjin --> orijin
             root = FXMLLoader.load((Objects.requireNonNull(getClass().getResource("main.fxml"))));
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
         } catch (IOException e){
             throw new RuntimeException(e);
         }
-        Scene scene = new Scene(root);
-        primaryStage.setScene(scene);
-        primaryStage.show();
     }
 
     public SeatBooking createBooking(){

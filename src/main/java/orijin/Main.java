@@ -1,3 +1,5 @@
+//Author: Yongxiang Jin
+
 package orijin;
 
 import javafx.application.Application;
@@ -6,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import orijin.SeatBooking;
 
 import java.io.IOException;
 import java.util.Objects;
